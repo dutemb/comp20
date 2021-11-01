@@ -21,7 +21,7 @@
 <body>
   <script language="javascript">
     /* for parts 2 and 3 */
-    $.get("https://github.com/dutemb/comp20/blob/main/setlist.json", function(data){
+    $.get("https://dutemb.github.io/comp20/setlist.json", function(data){
     text= "";
     data.forEach(function(song) {    
       text += "<br />" + song.song + "<br />" 
@@ -38,7 +38,7 @@
     function filterGenre(){
       /* part 4, filter with a form */
       var val = document.getElementById('filters').value;
-      $.get("https://github.com/dutemb/comp20/blob/main/setlist.json", function(data){
+      $.get("https://dutemb.github.io/comp20/setlist.json", function(data){
         text= "";
         if (val == 'All') {
           data.forEach(function(song){    
