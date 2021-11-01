@@ -21,10 +21,10 @@
 <body>
   <script language="javascript">
     /* for parts 2 and 3 */
-    $.get("setlist/setlist.json", function(data){
+    $.get("https://github.com/dutemb/comp20/blob/main/setlist.json", function(data){
     text= "";
     data.forEach(function(song) {    
-      text += "<br />" + song.name + "<br />" 
+      text += "<br />" + song.song + "<br />" 
               + "Artist: " + song.artist + "<br />"
               + "Genre: " + song.genre + "<br />"
               + "Year: " + song.year + "<br />";
@@ -38,11 +38,11 @@
     function filterGenre(){
       /* part 4, filter with a form */
       var val = document.getElementById('filters').value;
-      $.get("setlist.json", function(data){
+      $.get("https://github.com/dutemb/comp20/blob/main/setlist.json", function(data){
         text= "";
         if (val == 'All') {
           data.forEach(function(song){    
-            text += "<br />" + song.name + "<br />" 
+            text += "<br />" + song.song + "<br />" 
                     + "Artist: " + song.artist + "<br />"
                     + "Genre: " + song.genre + "<br />"
                     + "Year: " + song.year + "<br />";
@@ -50,7 +50,7 @@
         } else {
           data.forEach(function(song){ 
             if (song.genre.indexOf(val) != -1) {    
-              text += "<br />" + song.name + "<br />" 
+              text += "<br />" + song.song + "<br />" 
                       + "Artist: " + song.artist + "<br />"
                       + "Genre: " + song.genre + "<br />"
                       + "Year: " + song.year + "<br />";
@@ -72,8 +72,8 @@
         <option value="All">All</option>
         <option value="Indie">Indie</option>
         <option value="Alternative">Alternative</option>
-        <option value="Pop">Rock</option>
-        <option value="Rap">Rap</option>
+        <option value="Rock">Rock</option>
+        <option value="Dance">Dance</option>
       </select>
       <input type='button' value='Filter' onclick='filterGenre()'>
     </form>
