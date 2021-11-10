@@ -1,0 +1,36 @@
+[{
+    "name": "Chikn",
+    "artist": "Ava",
+    "sale": ["no"],
+},
+{
+    "name": "A day outside",
+    "artist": "Ava",
+    "sale": ["no"],
+},
+{
+    "name": "Art break",
+    "artist": "Ava",
+    "sale": ["no"],
+},
+{
+    "name": "Ava in marbles",
+    "artist": "Ava",
+    "sale": ["yes"],
+},
+{
+    "name": "Seasonal Depression",
+    "artist": "Ava",
+    "sale": ["yes"],
+},
+{
+    "name": "Tobby",
+    "artist": "Ava",
+    "sale": ["yes"],
+},
+{
+    "name": "test1",
+    "artist": "notAva",
+    "sale": ["yes"],
+},
+]
